@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+<<<<<<< HEAD
             $table->string('phone_number');
             $table->string('profile_photo');
             $table->string('certificate');
@@ -24,6 +25,15 @@ return new class extends Migration
             $table->timestamp('remember_token_expiration')->nullable();
             $table->timestamps();
 
+=======
+            $table->string('phone_number')->unique();
+            $table->string('profile_photo')->unique();
+            $table->string('certificate')->unique();
+            $table->rememberToken();
+            $table->string('verification_code')->unique()->nullable();
+            $table->timestamp('verification_code_expiration')->nullable();
+            $table->timestamps();
+>>>>>>> 2caf74e (task_3)
         });
     }
 

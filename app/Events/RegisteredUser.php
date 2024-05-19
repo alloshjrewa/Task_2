@@ -9,11 +9,19 @@ use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2caf74e (task_3)
 use App\Models\User;
 
 class RegisteredUser
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2caf74e (task_3)
     public $user;
     /**
      * Create a new event instance.

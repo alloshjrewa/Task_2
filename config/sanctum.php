@@ -46,11 +46,18 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'expiration' => 2 ,
     'ac_expiration' => 5,
     'rt_expiration' => 10,
 
 
+=======
+    'expiration' => null ,
+    'ac_expiration' => 5,
+    'rt_expiration' => 10,
+
+>>>>>>> 2caf74e (task_3)
     /*
     |--------------------------------------------------------------------------
     | Token Prefix

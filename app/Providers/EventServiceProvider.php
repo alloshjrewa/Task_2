@@ -2,12 +2,21 @@
 
 namespace App\Providers;
 
+<<<<<<< HEAD
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Event;
 use App\Events\RegisteredUser;
 use App\Listeners\SendEmailVerification;
+=======
+use App\Events\RegisteredUser;
+use Illuminate\Support\Facades\Event;
+use Illuminate\Auth\Events\Registered;
+use App\Listeners\SendEmailVerification;
+use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
+use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
+>>>>>>> 2caf74e (task_3)
 
 class EventServiceProvider extends ServiceProvider
 {

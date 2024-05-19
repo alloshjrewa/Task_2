@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 use App\Enums\TokenAbility;
 use Illuminate\Http\Request;
 
@@ -8,6 +9,12 @@ use App\Http\Controllers\Api\LogoutController;
 use App\Http\Controllers\Api\SignupController;
 use App\Http\Controllers\Api\VerifyEmailController;
 use App\Http\Controllers\Api\RefreshTokenController;
+=======
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
+>>>>>>> 2caf74e (task_3)
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +27,7 @@ use App\Http\Controllers\Api\RefreshTokenController;
 |
 */
 
+<<<<<<< HEAD
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
     return $request->user();
@@ -39,4 +47,12 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/auth/refresh-token', [RefreshTokenController::class, 'refreshToken']);
     Route::post('/auth/logout', [LogoutController::class, 'logoutUser']);
     Route::post('/email/verify', [VerifyEmailController::class, 'verify']);
+=======
+
+
+$api_path = '/Api/';
+Route::prefix('api')->group(function() use ($api_path) {
+    //Auth Routes
+    include __DIR__ . "{$api_path}Auth.php";
+>>>>>>> 2caf74e (task_3)
 });
